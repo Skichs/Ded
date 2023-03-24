@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, .html .css{
+  font-family: "Roboto", sans-serif;
+  background-image: url(background.jpg);
+  background-size: 100%;
+}
+
+.title{
+    text-align: center;
+    width: 50%;
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    color: green;
+}
+
+.reception{
+  text-align:center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.fn{
+  display: block;
+  margin-left: 450px;
+  padding-top: 20px;
+}
+
+.fn h3, .fn h4{
+  border-bottom: 1px solid rgb(64, 87, 64);
+}
+
+.bt{
+  padding: 10px 15px;
+  cursor:pointer;
+  font-family: inherit;
+  border-radius:5px;
+  border-width:0;
+  transition:all .2s;
+  cursor: pointer;
+  background: linear-gradient(to top, #636363, #a2ab58);
+}
+
+.bt:hover{
+  opacity: 1;
+  background:rgb(190, 207, 190);
+}
+
+.info_01 input, .info_02 input{
+  margin:0px;
+}
+/* спросит у димы про border  1px solid rgb(64, 87, 64); */
+.info_01 h4, .info_02 h4{
+  margin: 10px;
+  color:#
+}
+button{
+  padding: 10px 15px;
+  border-radius:5px;
+  cursor:pointer;
+  font-family: inherit;
+  border-width:0;
+
+  display: block;
+  position: absolute;
+  top:5px;
+  right: 5px;
+  
+  transition:all .2s;
+  cursor: pointer;
+  background: rgb(190, 207, 190);
+}
+
+button:hover{
+  opacity: 1;
+  background:linear-gradient(to top, #636363, #a2ab58);
+}
+
+.info{
+  border-radius: 20px;
+  padding: 0;
+  background: linear-gradient(to right, #636363, #a2ab58);
+  margin:20px
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+
+}
+.info{
+  box-shadow: none;
+  transition:box-shadow 300ms, transform 300ms;
+  
+ }
+.info:hover{
+  box-shadow: -8px 13px 8px 0px rgba(34, 60, 80, 0.2);
+  transform:scale(1.05);
+}
+
+.photo {
+  width: 150px;
+  padding-bottom:0;
+  padding-left: 10px;
+}
+
+

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Санаторий "Щучинский"</title>
+    <link rel="stylesheet" href="style_01.css">
+
+
+<body>
+  <h1 class="title">ДОБРО ПОЖАЛОВАТЬ В САНАТОРИЙ "ЩУЧИНСКИЙ"</h1>
+  <br>
+  <br>
+  <br>
+
+  <div class="reception">
+    <div class="info_01">
+    <h4>Если вы хотите внести данные о себе нажмите кнопку</h4>
+    <form th:action="@{/registration}" th:method="GET">
+      <input class="bt" type="submit" value="Внести информацию о себе" />
+    </div>
+    </form>
+    <br>
+    <div class="info_02">
+      <h4>Список актуальных пациентов</h4>
+      <form th:action="@{/findAllPatients}" th:method="GET">
+       <input class="bt" type="submit" value="Увидеть всех пациентов" />
+    </div>
+  </div>
+    </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<form th:method="GET" th:action="@{'/logout'}">
+    <button type="submit" class="btn">
+        Выйти из учетной записи
+    </button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="info">
+  <img class="photo" src="Ded.png">
+    <div class="fn">
+      <h3>Кубесов Шаймерден Магруппович</h3>
+      <h4>Главный врач санатория "Щучинский"</h4>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+</body>
+</html>
