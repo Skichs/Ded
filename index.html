@@ -1,69 +1,80 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<html xmlns:th="http://www.thymeleaf.org"></html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Санаторий "Щучинский"</title>
-    <link rel="stylesheet" href="style_01.css">
-
+    <link rel="stylesheet" href="styles/styles.css">
 
 <body>
-  <h1 class="title">ДОБРО ПОЖАЛОВАТЬ В САНАТОРИЙ "ЩУЧИНСКИЙ"</h1>
-  <br>
-  <br>
-  <br>
+  <div class="main-background"></div>
 
-  <div class="reception">
-    <div class="info_01">
-    <h4>Если вы хотите внести данные о себе нажмите кнопку</h4>
-    <form th:action="@{/registration}" th:method="GET">
-      <input class="bt" type="submit" value="Внести информацию о себе" />
+  <header class="header fadeIn">
+    <button class="button">Регистрация</button>
+    <button class="button">Выйти</button>
+  </header>
+
+  <section class="section main">
+    <div class="inner">
+      <h1 class="title">санаторий "щучинский"</h1>
+
+      <div class="filler">
+        <div class="dot"></div>
+      </div>
+
+      <button class="button">Список пациентов</button>
     </div>
-    </form>
-    <br>
-    <div class="info_02">
-      <h4>Список актуальных пациентов</h4>
-      <form th:action="@{/findAllPatients}" th:method="GET">
-       <input class="bt" type="submit" value="Увидеть всех пациентов" />
+
+    <a href="#staff" class="scroll-marker fadeIn"></a>
+  </section>
+
+  <section class="section staff fadeIn">
+    <div class="inner">
+      <h2 id="staff" class="sub-title">Наши сотрудники</h2>
+
+      <div class="staff-list">
+        <div class="staff-item">
+          <div class="staff-photo" style="background-image: url(../images/Ded.png)"></div>
+
+          <div class="staff-info">
+            <div class="staff-name">Кубесов Шаймерден Магруппович</div>
+            <div class="staff-post">Главный врач</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    </form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  </section>
 
-<form th:method="GET" th:action="@{'/logout'}">
-    <button type="submit" class="btn">
-        Выйти из учетной записи
-    </button>
-</form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!--  <div class="reception">-->
+<!--    <div class="info_01">-->
+<!--      <h4>Если вы хотите внести данные о себе нажмите кнопку</h4>-->
+<!--      <form th:action="@{/registration}" th:method="GET">-->
+<!--        <input class="bt" type="submit" value="Внести информацию о себе" />-->
+<!--      </form>-->
+<!--    </div>-->
+<!--    <br>-->
+<!--    <div class="info_02">-->
+<!--      <h4>Список актуальных пациентов</h4>-->
+<!--      <form th:action="@{/findAllPatients}" th:method="GET">-->
+<!--       <input class="bt" type="submit" value="Увидеть всех пациентов" />-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  -->
+<!--  <form th:method="GET" th:action="@{'/logout'}">-->
+<!--    <button type="submit" class="btn">-->
+<!--        Выйти из учетной записи-->
+<!--    </button>-->
+<!--  </form>-->
 
-
-
-<div class="info">
-  <img class="photo" src="Ded.png">
-    <div class="fn">
-      <h3>Кубесов Шаймерден Магруппович</h3>
-      <h4>Главный врач санатория "Щучинский"</h4>
-  </div>
-</div>
-
-<br>
-<br>
-<br>
-
-
+<!--  <div class="info">-->
+<!--    <img class="photo" src="images/Ded.png">-->
+<!--      <div class="fn">-->
+<!--        <h3>Кубесов Шаймерден Магруппович</h3>-->
+<!--        <h4>Главный врач санатория "Щучинский"</h4>-->
+<!--    </div>-->
+<!--  </div>-->
 </body>
 </html>
