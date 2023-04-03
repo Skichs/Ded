@@ -1,0 +1,34 @@
+.text{
+  padding:10px;
+}
+
+.container{
+  display: flex;
+}
+
+.item{
+padding:10px;
+border: 1px solid grey;
+display: inline-block;
+margin:5px;
+}
+
+.one{
+  background: pink; 
+}
+
+.too{
+  background:  rgb(122, 122, 171); 
+}
+
+.three{
+  background:  rgb(105, 77, 82); 
+}
+
+.four{
+  background: rgb(28, 100, 28);
+}
+
+.five{
+  background: grey;
+}
